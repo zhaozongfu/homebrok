@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>赵宗福Swiper作业5</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        margin: 50px auto;
+        width: 1000px;
+        height: 600px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      span {
+        display: block;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .swiper-pagination {
+        text-align: right; /* 将分页器内部元素向左对齐 */
+        width: 10px; /* 设置分页器宽度 */
+        height: 10px; /* 设置分页器高度 */
+      }
+      .swiper-pagination-bullet {
+        position: relative;
+        top: -10px;
+        right: 30px;
+        background-color: red;
+        width: 10px; /* 设置分页器小圆点宽度 */
+        height: 10px; /* 设置分页器小圆点高度 */
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      #box1 {
+        position: relative;
+      }
+      #box1::after {
+        content: "赛博朋克";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 90%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+      }
+      #box2 {
+        position: relative;
+      }
+      #box2::after {
+        content: "3只熊";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 90%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+      }
+      #box3 {
+        position: relative;
+      }
+      #box3::after {
+        content: "死亡搁浅";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 90%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+      }
+      #box4 {
+        position: relative;
+      }
+      #box4::after {
+        content: "马里奥";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 90%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+      }
+      #box5 {
+        position: relative;
+      }
+      #box5::after {
+        content: "极限竞速地平线5";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 90%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+      }
+      .swiper {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2.5%;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 30px;
+        height: 50px;
+        font-size: 20px;
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 15%;
+        padding: 13px;
+      }
+      .swiper-button-next:hover,
+      .swiper-button-prev:hover {
+        background-color: gray;
+      }
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="box1">
+          <img src="https://w.wallhaven.cc/full/3l/wallhaven-3lw5zv.png" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide" id="box2">
+          <img src="https://w.wallhaven.cc/full/2y/wallhaven-2yz3m9.jpg" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide" id="box3">
+          <img src="https://w.wallhaven.cc/full/d6/wallhaven-d68kdl.png" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide" id="box4">
+          <img src="https://w.wallhaven.cc/full/6d/wallhaven-6dm3rl.jpg" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide" id="box5">
+          <img src="https://w.wallhaven.cc/full/vq/wallhaven-vqzrr8.png" alt="" srcset="" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 3000 /* 设置自动翻页间隔时间，单位为毫秒 */,
+        },
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

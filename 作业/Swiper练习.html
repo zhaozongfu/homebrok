@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper练习</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-wrapper {
+        /* 通过改变animation-timing-function 制作弹性切换效果 */
+        transition: 2s cubic-bezier(0.68, -0.4, 0.27, 1.34) 0.2s;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://w.wallhaven.cc/full/l8/wallhaven-l8wzr2.png"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://w.wallhaven.cc/full/o5/wallhaven-o5g6r7.png"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://w.wallhaven.cc/full/5g/wallhaven-5g57w1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://w.wallhaven.cc/full/6d/wallhaven-6d5k6x.jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://w.wallhaven.cc/full/d6/wallhaven-d63voj.jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://w.wallhaven.cc/full/p9/wallhaven-p9wkme.jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://w.wallhaven.cc/full/6d/wallhaven-6dler7.jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://w.wallhaven.cc/full/kx/wallhaven-kx8evd.jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://w.wallhaven.cc/full/rr/wallhaven-rrqz77.png"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://w.wallhaven.cc/full/9d/wallhaven-9doldx.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        speed: 2000,
+        autoplay: {
+          delay: 3000 /* 设置自动翻页间隔时间，单位为毫秒 */,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>赵宗福Swiper作业7</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      #box {
+        position: relative;
+        top: 25px;
+        left: 300px;
+        width: 1000px;
+        height: 700px;
+      }
+      #box1{
+        position: relative;
+        top: -600px;
+        left: 100px;
+        width: 600px;
+        height: 550px;
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      body {
+        background: #000;
+        color: #000;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .mySwiper2 {
+        height: 100%;
+        width: 100%;
+      }
+
+      .mySwiper {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div id="box">
+      <div
+        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+        class="swiper mySwiper2"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://w.wallhaven.cc/full/zy/wallhaven-zyzqly.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://w.wallhaven.cc/full/we/wallhaven-we66kq.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://w.wallhaven.cc/full/85/wallhaven-85eklo.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://w.wallhaven.cc/full/gp/wallhaven-gp5yg3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://w.wallhaven.cc/full/l8/wallhaven-l8zxoq.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://w.wallhaven.cc/full/qz/wallhaven-qzj37d.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://w.wallhaven.cc/full/gp/wallhaven-gp5wvd.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://w.wallhaven.cc/full/9d/wallhaven-9dopod.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://w.wallhaven.cc/full/jx/wallhaven-jxeo75.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://w.wallhaven.cc/full/o5/wallhaven-o5yqkl.jpg" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <div id="box1">
+    <div thumbsSlider="" class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://w.wallhaven.cc/full/zy/wallhaven-zyzqly.jpg" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="https://w.wallhaven.cc/full/we/wallhaven-we66kq.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://w.wallhaven.cc/full/85/wallhaven-85eklo.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://w.wallhaven.cc/full/gp/wallhaven-gp5yg3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://w.wallhaven.cc/full/l8/wallhaven-l8zxoq.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://w.wallhaven.cc/full/qz/wallhaven-qzj37d.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://w.wallhaven.cc/full/gp/wallhaven-gp5wvd.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://w.wallhaven.cc/full/9d/wallhaven-9dopod.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://w.wallhaven.cc/full/jx/wallhaven-jxeo75.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://w.wallhaven.cc/full/o5/wallhaven-o5yqkl.jpg" />
+        </div>
+      </div>
+    </div>
+</div>
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        loop: true,
+        autoplay: {
+          delay: 3000 /* 设置自动翻页间隔时间，单位为毫秒 */,
+          disableOnInteraction: false,
+        },
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        autoplay: {
+          delay: 3000 /* 设置自动翻页间隔时间，单位为毫秒 */,
+          disableOnInteraction: false,
+        },
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+  </body>
+</html>

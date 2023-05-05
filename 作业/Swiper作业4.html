@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>赵宗福Swiper作业4</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        margin: 50px auto;
+        width: 1000px;
+        height: 600px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      span {
+        display: block;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .swiper-pagination {
+        text-align: left; /* 将分页器内部元素向左对齐 */
+        width: 10px; /* 设置分页器宽度 */
+        height: 10px; /* 设置分页器高度 */
+      }
+      .swiper-pagination-bullet {
+        position: relative;
+        top: -10px;
+        left: 30px;
+        background-color: #eee;
+        width: 13px; /* 设置分页器小圆点宽度 */
+        height: 13px; /* 设置分页器小圆点高度 */
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      #box1 {
+        position: relative;
+      }
+      #box1::after {
+        content: "亚历山大·斯科尔德";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 85%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+      }
+      #box2 {
+        position: relative;
+      }
+      #box2::after {
+        content: "无主之地";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 85%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+      }
+      #box3 {
+        position: relative;
+      }
+      #box3::after {
+        content: "宾利穆莱纳巴图尔";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 85%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+      }
+      #box4 {
+        position: relative;
+      }
+      #box4::after {
+        content: "刺客信条：瓦尔哈拉";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 85%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+      }
+      #box5 {
+        position: relative;
+      }
+      #box5::after {
+        content: "死亡搁浅";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 85%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+      }
+      #box6 {
+        position: relative;
+      }
+      #box6::after {
+        content: "樱桃内科";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 85%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+      }
+      #box7 {
+        position: relative;
+      }
+      #box7::after {
+        content: "东京";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 85%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+      }
+      #box8 {
+        position: relative;
+      }
+      #box8::after {
+        content: "雨夜";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 85%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+      }
+      #box9 {
+        position: relative;
+      }
+      #box9::after {
+        content: "文明与建设";
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 85%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+      }
+      .swiper {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2.5%;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 25px;
+        height: 25px;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 30px;
+        padding: 13px;
+      }
+      .swiper-button-next {
+        position: absolute;
+        top: 550px;
+        left: 900px;
+      }
+      .swiper-button-prev {
+        position: absolute;
+        top: 550px;
+        left: 820px;
+      }
+      .swiper-button-next:hover,
+      .swiper-button-prev:hover {
+        background-color: rgb(255, 255, 255, 0.6);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="box1">
+          <img src="https://w.wallhaven.cc/full/gp/wallhaven-gpwxrq.jpg" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide" id="box2">
+          <img src="https://w.wallhaven.cc/full/ex/wallhaven-ex33rl.png" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide" id="box3">
+          <img src="https://w.wallhaven.cc/full/kx/wallhaven-kxzl26.jpg" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide" id="box4">
+          <img src="https://w.wallhaven.cc/full/3l/wallhaven-3l3m1d.png" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide" id="box5">
+          <img src="https://w.wallhaven.cc/full/7p/wallhaven-7p1j5y.png" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide" id="box6">
+          <img src="https://w.wallhaven.cc/full/7p/wallhaven-7p9djo.jpg" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide" id="box7">
+          <img src="https://w.wallhaven.cc/full/9d/wallhaven-9dz16x.jpg" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide" id="box8">
+          <img src="https://w.wallhaven.cc/full/5g/wallhaven-5gzyy1.jpg" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide" id="box9">
+          <img src="https://w.wallhaven.cc/full/gp/wallhaven-gpqmld.jpg" alt="" srcset="" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 3000 /* 设置自动翻页间隔时间，单位为毫秒 */,
+        },
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
