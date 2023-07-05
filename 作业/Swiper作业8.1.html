@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="swiper-bundle.min.css" />
-    <script src="swiper-bundle.min.js"></script>
-    <title>赵宗福Swiper作业8.1</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-      body {
-        position: relative;
-        width: 800px;
-        height: 651px;
-      }
-      .swiper {
-        position: relative;
-        top: 205px;
-        width: 655px;
-        height: 330px;
-      }
-      #boxxx {
-        position: absolute;
-        top: 300px;
-        left: 360px;
-        width: 600px;
-        height: 300px;
-        --swiper-theme-color: aqua;
-      }
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div
-      style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="swiper-bundle.min.css" />
+  <script src="swiper-bundle.min.js"></script>
+  <title>赵宗福Swiper作业8.1</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      position: relative;
+      width: 800px;
+      height: 651px;
+    }
+
+    .swiper {
+      position: relative;
+      top: 205px;
+      width: 655px;
+      height: 330px;
+    }
+
+    #boxxx {
+      position: absolute;
+      top: 300px;
+      left: 360px;
+      width: 600px;
+      height: 300px;
+      --swiper-theme-color: aqua;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="
         width: 1319px;
         height: 667px;
         margin: auto;
@@ -47,45 +52,45 @@
         background: url('https://uploadstatic.mihoyo.com/puzzle/upload/puzzle/2023/04/04/2a3fc05e12e57f38d8428a5c71667d0a_5537919882126701753.png?x-oss-process=image/format,webp/quality,Q_90');
         background-size: cover;
         background-position: center;
-      "
-    >
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" data-v-24224816>
-            <img src="https://w.wallhaven.cc/full/vq/wallhaven-vqpz65.jpg" />
-          </div>
-          <div class="swiper-slide" data-v-24224816>
-            <img src="https://w.wallhaven.cc/full/x6/wallhaven-x6773o.jpg" />
-          </div>
-          <div class="swiper-slide" data-v-24224816>
-            <img src="https://w.wallhaven.cc/full/ex/wallhaven-ex33jo.jpg" />
-          </div>
+      ">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" data-v-24224816>
+          <img src="https://w.wallhaven.cc/full/vq/wallhaven-vqpz65.jpg" />
+        </div>
+        <div class="swiper-slide" data-v-24224816>
+          <img src="https://w.wallhaven.cc/full/x6/wallhaven-x6773o.jpg" />
+        </div>
+        <div class="swiper-slide" data-v-24224816>
+          <img src="https://w.wallhaven.cc/full/ex/wallhaven-ex33jo.jpg" />
         </div>
       </div>
-      <div id="boxxx">
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev" id="ss"></div>
-        <div class="swiper-button-next" id="ss"></div>
-      </div>
     </div>
-    <script>
-      var mySwiper = new Swiper(".swiper", {
-        direction: "horizontal", // 垂直切换选项
-        autoplay: {
-          delay: 3000,
-        },
-        loop: true,
-        // 如果需要分页器
-        pagination: {
-          el: ".swiper-pagination",
-        },
+    <div id="boxxx">
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev" id="ss"></div>
+      <div class="swiper-button-next" id="ss"></div>
+    </div>
+  </div>
+  <script>
+    var mySwiper = new Swiper(".swiper", {
+      direction: "horizontal", // 垂直切换选项
+      autoplay: {
+        delay: 3000,
+      },
+      loop: true,
+      // 如果需要分页器
+      pagination: {
+        el: ".swiper-pagination",
+      },
 
-        // 如果需要前进后退按钮
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-  </body>
+      // 如果需要前进后退按钮
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
 </html>
