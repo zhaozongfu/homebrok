@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    /* background-image: url("https://y.qq.com/music/photo_new/T002R300x300M000002uvwNg1RB6vc_1.jpg?max_age=2592000");
+    opacity: 0.4; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+#top {
+    width: 100%;
+    height: 10vh;
+
+    .img1 {
+        float: left;
+        margin-top: 20px;
+        margin-left: 20px;
+        opacity: .3;
+    }
+
+    .img1:hover {
+        opacity: 1;
+    }
+
+    .img2 {
+        float: right;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+}
+
+#content-content {
+    width: 80%;
+    height: 75vh;
+    margin: auto;
+    display: flex;
+
+    #content-content-left {
+        width: 67%;
+        height: 100%;
+
+        #content-content-left-top {
+            width: 100%;
+            height: 6.5vh;
+            line-height: 5vh;
+
+            .a {
+                display: inline-block;
+                opacity: .8;
+                margin-left: 3px;
+                padding: 4px 40px;
+                border: 1px solid white;
+            }
+
+            .a:hover {
+                opacity: 1;
+            }
+        }
+
+        #content-content-left-bottom {
+            width: 100%;
+            height: 68.5vh;
+
+            .li1 {
+                height: 50px;
+                line-height: 50px;
+                color: white;
+
+                .span1 {
+                    margin-left: 30px !important;
+                    width: 500px;
+                    height: 50px;
+                    display: inline-block;
+                }
+
+                .span2 {
+                    /* margin-left: 400px; */
+                    width: 150px;
+                    display: inline-block;
+                    height: 50px;
+                }
+
+                .span3 {
+                    /* margin-left: 180px; */
+                    width: 70px;
+                    height: 50px;
+                    display: inline-block;
+                }
+            }
+
+            .check1 {
+                width: 16px;
+                height: 16px;
+                margin-left: 2px;
+            }
+        }
+    }
+
+    #content-content-right {
+        width: 33%;
+        height: 100%;
+
+        /* background-color: rgb(0, 0, 0); */
+        #content-content-right-top {
+            width: 100%;
+        }
+    }
+}
+
+#bottom {
+    width: 80%;
+    height: 15vh;
+    /* background-color: rgb(0, 0, 0); */
+    margin: auto;
+}
